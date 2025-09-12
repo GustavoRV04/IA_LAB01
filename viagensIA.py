@@ -4,10 +4,8 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from crewai import Agent, Task, Crew, Process, LLM
 
 
-# Configuração de chaves de API (em ambiente real, usar variáveis de ambiente)
-# IMPORTANTE: Em um cenário real, use variáveis de ambiente para segurança
-# Ex: os.environ["OPENAI_API_KEY"] = os.getenv('OPENAI_API_KEY')
-os.environ["GOOGLE_API"] = "AIzaSyAGbVc_m_LFKwNBbWTNpZbRxR_eK1YR1L0"  
+# Adicione a SUA chave entre as aspas
+os.environ["GOOGLE_API"] = ""  
 
 # Configuração do modelo de linguagem
 llm = LLM(model='gemini/gemini-2.0-flash-lite', 
