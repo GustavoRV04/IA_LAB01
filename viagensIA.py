@@ -1,4 +1,4 @@
-# Importação de bibliotecas
+# bibliotecas
 import os
 from langchain_google_genai import ChatGoogleGenerativeAI
 from crewai import Agent, Task, Crew, Process, LLM
@@ -141,7 +141,7 @@ task_criar_roteiro = Task(
 # CRIAÇÃO E CONFIGURAÇÃO DA EQUIPE (CREW)
 
 
-# Criar a crew (equipe) com os agentes e tarefas definidas
+# Criar a crew  com os agentes e tarefas definidas
 crew = Crew(
     agents=[pesquisador_destinos, especialista_orcamento, planejador_roteiros],
     tasks=[task_pesquisar_destinos, task_planejar_orcamento, task_criar_roteiro],
